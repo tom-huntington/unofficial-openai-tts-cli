@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["tts_openai_cli_script"]
+
+
+[project]
+description = "CLI for OpenAI's tts API which deals with rate limits and maximum input size"
+dynamic = ["version"]
+name = "unoffical_openai_tts_cli"
+
+[project.scripts]
+tts_openai = "tts_openai_cli_script:main"
+
+
